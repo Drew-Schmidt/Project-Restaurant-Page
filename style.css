@@ -1,0 +1,54 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(0,0,0,.35);
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+#selectHome, #selectMenu, #selectContact {
+  margin-right: .5rem;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+/*   background-color: lightcoral; */
+}
+
+.navBtn:hover {
+  color: orangered;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+footer {
+  background-color: rgba(0,0,0,0.35);
+  bottom: 0;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+

@@ -1,0 +1,21 @@
+{
+  "name": "project-restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant Website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drew-Schmidt/Project-Restaurant-Page.git"
+  },
+  "author": "Drew-Schmidt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drew-Schmidt/Project-Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/Drew-Schmidt/Project-Restaurant-Page#readme",
+  "devDependencies": {
+  }
+}
