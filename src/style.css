@@ -1,19 +1,17 @@
 body {
-  font-family: Verdana, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  
-/*   background: #f2f2f2 url("https://img.freepik.com/premium-photo/abstract-blur-coffee-shop-cafe-restaurant-background_1339-170592.jpg?w=2000") no-repeat fixed 50% 0%; */
+  font-family: Verdana, Arial, sans-serif;
 }
 
 header {
   height: 7rem;
   text-align: center;
-  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 2rem;
 }
 
 nav {
@@ -23,22 +21,24 @@ nav {
   list-style: none;
 }
 
-
+/* 
 nav a {
   color: black;
   text-decoration: none;
-}
+} */
 
+/* [HEADER] nav buttons */
 #selectHome, #selectMenu, #selectContact {
- line-height: 2rem;
   margin: auto .1rem;
   padding: 0 1rem 0 1rem;
+  line-height: 2rem;
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
 /*   background-color: lightcoral; */
 }
 
+/* [HEADER] nav button on:hover */
 .navBtn:hover {
   background-color: #3bb300;
   border-bottom: solid .25rem #2A8000;
@@ -46,21 +46,20 @@ nav a {
 
 }
 
+
+/* [HOME][CONTACT] background */
 main {
   margin:auto auto 2rem auto;
-/*   background-color: black; */
-  background: rgba(208,228,245,0.75) url("https://img.freepik.com/free-photo/high-angle-vegetarian-burger-cutting-board-with-copy-space_23-2148784536.jpg?w=1380&t=st=1676332890~exp=1676333490~hmac=07a8f5796ad8aed8d9be8e46eb37fd3a51847ed240acc9fbeedb3343dc5b280b") no-repeat scroll 50% 50%;
+  padding: 20px;
   height: 47rem;
   width: 90%;
   max-width: 83rem;
-  padding: 20px;
+/*   background-color: black; */
+  background: rgba(208,228,245,0.75) url("https://img.freepik.com/free-photo/coffee-beans-with-props-making-coffee_1220-4536.jpg?w=1380&t=st=1676378862~exp=1676379462~hmac=dbc53461f3a2f8cd70c447759072aacf36ec5a93f0ba92999b7069eaec388353") no-repeat scroll 50% 50%;
   color: white;
   text-align: center;
   border: solid .1rem black;
-  overflow: hidden;
 }
-
-
 
 footer {
   height: 4rem;
@@ -70,26 +69,83 @@ footer {
   justify-content: center;
 }
 
+/* [HEADER] active nav button */
 .select {
   background-color: #3bb300;
   border-bottom: solid .25rem #2A8000;
   color:white;
 }
 
+/* [HOME] info container */
 .infoBlock {
   position: relative;
   top: 25%;
   left: 5%;
   width: 24rem;
-  height: 25rem;
+  height: 22rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   background-color: rgba(0,0,0,.4);
   border-left: solid .2rem #32ff2b;
 }
 
+/* [HOME] h1 element 'Est. 2023' */
+#homeTitle{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+/* [HEADER] 'Coffee Spot' */
+h3{
+  margin: auto 1.25rem;
+  font-family: cursive;
+  color:#B35900
+}
+
+/* [MENU] header bar */
+.menuMain{
+  height: 100%;
+  margin-bottom: 0;
+}
+
+/* [MENU] h1 element */
+#menuTitle {
+  position: relative;
+  top: auto;
+  right: 25%;
+}
+
+/* [MENU] list container */
+.menu{
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
+  max-width: 50rem;
+  padding: 20px; 
+  text-align: center;
+  overflow: hidden;
+}
+
+/* [MENU] STUFF (FROM FREECODECAMP)  */
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* PHONES ONLY  */
 @media only screen and (max-width: 767px) {
   .infoBlock {
     position: relative;
@@ -99,6 +155,10 @@ footer {
   }
 }
 
-h3{
-  margin: auto 1.25rem;
+@media only screen and (max-width: 767px) {
+  main {
+    max-height: 25rem;
+  }
 }
+
+/* ----------------------- *
